@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Домашнее задание</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+		body {
+			background: #edeef0;
+			margin: 1% 0 0 0;
+		}
+
+		p {
+			display: block;
+			margin-left: 15%;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.back {
+			position: relative;
+			width: 100%;
+			height: 40px;
+			background: rgb(142, 177, 216);
+			border-radius: 7px;
+			margin-top: -2px;
+		}
+
+		#home img.logo {
+			position: relative;
+			width: 110px;
+			height: 40px;
+			border-radius: 7px;
+			left: 6px;
+			top: 1px;
+		}
+
+		.navi {
+			font-family: 'Roboto', sans-serif;
+			text-decoration: none;
+			padding: 12px 10px 15px;
+			position: relative;
+			display: block;
+			height: 13px;
+			margin: 0px;
+			font-weight: bold;
+			font-size: 11px;
+			color: #E8EFF7;
+			text-shadow: 0px 1px 0px #416389;
+			text-transform: lowercase;
+			float: right;
+		}
+
+		.w {
+			margin-left: 5%;
+		}
+
+
+		.s {
+			margin-left: 18%;
+			width: 12px;
+			height: 46px;
+		}
+
+		.header1 {
+			display: inline-block;
+			width: 470px;
+			height: 270px;
+
+		}
+
+
+		strong {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 14px;
+			color: #316389;
+		}
+
+		.dws {
+			display: inline-block;
+			position: relative;
+		}
+
+		.blocImg {
+			display: inline-block;
+			width: 90%;
+			height: 60%;
+			margin-left: 1%;
+			margin-top: 5px;
+			border: 2px solid gray;
+			border-radius: 7px;
+			overflow: hidden;
+			cursor: pointer;
+			background: #000;
+		}
+
+		.blocImg img {
+			width: 100%;
+			transition: .5s;
+		}
+
+		.dws:hover .blocImg img {
+			transform: rotate(-10deg) scale(1.3);
+			filter: blur(5px);
+			opacity: .5;
+		}
+
+		.blocText {
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			right: 30px;
+			bottom: 30px;
+		}
+
+		.text {
+			color: #fff;
+			text-transform: uppercase;
+			padding: 0 20px;
+			opacity: 0;
+			transition: .5s;
+
+		}
+
+		.text h2 {
+			font-size: 25px;
+		}
+
+		.text h2 span {
+			color: orange;
+			padding-bottom: 3px;
+			border-bottom: 2px solid #fff;
+		}
+
+		.text p {
+			position: absolute;
+			top: 100px;
+			width: 150px;
+			border-left: 4px solid orange;
+			padding: 0 10px;
+			left: -40px;
+		}
+
+		.blocText::before,
+		.blocText::after {
+			position: absolute;
+			content: " ";
+			top: 0;
+			left: 0;
+			width: 92%;
+			height: 100%;
+			transition: .5s;
+		}
+
+		.blocText::before {
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			transform: scale(0, 1);
+		}
+
+		.blocText::after {
+			border-right: 1px solid #fff;
+			border-left: 1px solid #fff;
+			transform: scale(1, 0);
+		}
+
+		.dws:hover .blocText::before,
+		.dws:hover .blocText::after {
+			transform: scale(1, 1);
+		}
+
+		.dws:hover .text {
+			opacity: 1;
+		}
+
+		@media (min-width:500px) {
+			body {
+				font: 100 1.2em/1.4 sans-serif;
+				padding: 3%;
+			}
+			nav li {
+				display: inline-block;
+			}
+		}
+
+		@media (min-width:800px) {
+			article {
+				display: inline-block;
+				width: 37%;
+				margin: 30px 6%;
+				vertical-align: top;
+			}
+			img {
+				border-radius: 20px;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="back">
+			<div id="home">
+				<a href="https://vk.com">
+					<img src="http://toplogos.ru/images/logo-gallery.png" class="logo" title="Gallery">
+				</a>
+				<a class="navi" href="#">Вход</a>
+				<a class="navi" href="#">Контакты</a>
+				<a class="navi" href="#">Меню</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="w">
+
+			<div class="s"></div>
+
+			<section>
+				<div class="dws">
+					<div class="blocImg">
+						<img src="https://cdn.pixabay.com/photo/2016/11/30/12/29/vintage-1872682_960_720.jpg" alt="CSS">
+						<div class="blocText">
+							<div class="text">
+								<h2>CSS эффект
+									<span>при наведении</span>
+								</h2>
+								<p>Тут
+									<br> будет
+									<br> какой нибудь
+									<br> текст</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="dws">
+					<div class="blocImg">
+						<img src="https://cdn.pixabay.com/photo/2015/06/08/15/11/typewriter-801921_960_720.jpg" alt="CSS">
+						<div class="blocText">
+							<div class="text">
+								<h2>CSS эффект
+									<span>при наведении</span>
+								</h2>
+								<p>Тут
+									<br> будет
+									<br> какой нибудь
+									<br> текст</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="dws">
+					<div class="blocImg">
+						<img src="https://cdn.pixabay.com/photo/2018/01/28/21/14/lens-3114729_960_720.jpg" alt="CSS">
+						<div class="blocText">
+							<div class="text">
+								<h2>CSS эффект
+									<span>при наведении</span>
+								</h2>
+								<p>Тут
+									<br> будет
+									<br> какой нибудь
+									<br> текст</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="dws">
+					<div class="blocImg">
+						<img src="https://cdn.pixabay.com/photo/2017/08/07/01/41/magnifying-glass-2598507_960_720.jpg" alt="CSS">
+						<div class="blocText">
+							<div class="text">
+								<h2>CSS эффект
+									<span>при наведении</span>
+								</h2>
+								<p>Тут
+									<br> будет
+									<br> какой нибудь
+									<br> текст</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="dws">
+					<div class="blocImg">
+						<img src="https://cdn.pixabay.com/photo/2016/11/30/12/42/vintage-1872697_960_720.jpg" alt="CSS">
+						<div class="blocText">
+							<div class="text">
+								<h2>CSS эффект
+									<span>при наведении</span>
+								</h2>
+								<p>Тут
+									<br> будет
+									<br> какой нибудь
+									<br> текст</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="dws">
+					<div class="blocImg">
+						<img src="https://cdn.pixabay.com/photo/2017/03/17/22/08/the-loft-2152780_960_720.jpg" alt="CSS">
+						<div class="blocText">
+							<div class="text">
+								<h2>CSS эффект
+									<span>при наведении</span>
+								</h2>
+								<p>Тут
+									<br> будет
+									<br> какой нибудь
+									<br> текст</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<p>
+			<a href="https://www.instagram.com/filimonov.andrey/" target="_blank">Разработчик: Филимонов А.О.</a>
+		</p>
+	</footer>
+
+
+</body>
+
+</html>
